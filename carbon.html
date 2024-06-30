@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CARBON FOOTPRINT CALCULATOR</h1>
+    <br /><br />
+    <form onsubmit="carbon()">
+      <h4>ENTER THE FOLLOWING DETAILS :</h4>
+      <label>No. of people in household:</label><br />
+      <input type="number" id="users" required />
+      <br /><br />
+      <label>Monthly electric bill:</label><br />
+      <input type=" number" id="el_bill" required /><br /><br />
+      <label>Monthly gas bill:</label><br />
+      <input type=" number" id="gas_bill" required /><br /><br />
+      <label>Monthly oil bill:</label><br />
+      <input type=" number" id="oil_bill" required /><br /><br />
+      <label>Amount of flight hours in past year:</label><br />
+      <select name="flight" id="flight" required>
+        <option value="1100">4 hours of less</option>
+        <option value="4400">More than 4 hours</option></select
+      ><br /><br />
+      <label>Do you recycle newspaper</label><br />
+      <select name="newspaper" id="newspaper" required>
+        <option value="0">YES</option>
+        <option value="184">NO</option></select
+      ><br /><br />
+      <label>Do you recycle aluminium and tin</label><br />
+      <select name="metal" id="metal">
+        <option value="0">YES</option>
+        <option value="166">NO</option></select
+      ><br /><br /><br />
+      <input type="submit" />
+    </form>
+    <br /><br />
+    <div>
+      YOUR CARBON FOOTPRINT USAGE IS
+      <h3 id="cValue"></h3>
+      <!-- h3 is the carbon footprint value which will be calculated and displayed later -->
+    </div>
+    <script src="carbon.js"></script>
+  </body>
+</html>
