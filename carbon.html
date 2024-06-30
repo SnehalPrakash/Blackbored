@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>CARBON FOOTPRINT CALCULATOR</h1>
+    <header>
+      <h1>Environmental Awareness</h1>
+  </header>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="carbon.html">Carbon Footprint Calculator</a>
+      <a href="conservation.html">Conservation Measures</a>
+      <a href="about.html">About</a>
+  </nav>
+    <h1 style="padding: 20px;">CARBON FOOTPRINT CALCULATOR</h1>
     <br /><br />
     <form onsubmit="carbon()">
       <h4>ENTER THE FOLLOWING DETAILS :</h4>
@@ -35,13 +46,14 @@
         <option value="166">NO</option></select
       ><br /><br /><br />
       <input type="submit" />
+      <div class="output-box">
+        <h3>YOUR CARBON FOOTPRINT USAGE IS</h3>
+        <h3 id="cValue" class="output-box"></h3>
+        <!-- h3 is the carbon footprint value which will be calculated and displayed later -->
+      </div>
     </form>
     <br /><br />
-    <div>
-      YOUR CARBON FOOTPRINT USAGE IS
-      <h3 id="cValue"></h3>
-      <!-- h3 is the carbon footprint value which will be calculated and displayed later -->
-    </div>
+    
     <script src="carbon.js"></script>
   </body>
 </html>
