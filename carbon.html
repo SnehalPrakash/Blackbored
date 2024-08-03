@@ -6,7 +6,7 @@
     <title>Carbon Footprint Calculator</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body style="background-image: url(images/backdrop.jpeg); background-repeat: no-repeat; background-size: cover;backface-visibility: 50%;background-attachment: fixed; "></body>
     <header>
       <h1>Environmental Awareness</h1>
   </header>
@@ -17,7 +17,7 @@
       <a href="conservation.html">Conservation Measures</a>
       <a href="about.html">About</a>
   </nav>
-    <h1 style="padding: 20px;">CARBON FOOTPRINT CALCULATOR</h1>
+    <h1 style="padding: 20px;color:white;">CARBON FOOTPRINT CALCULATOR</h1>
     <br /><br />
     <form onsubmit="carbon()">
       <h4>ENTER THE FOLLOWING DETAILS :</h4>
@@ -50,6 +50,8 @@
         <h3>YOUR CARBON FOOTPRINT USAGE IS</h3>
         <h3 id="cValue" class="output-box"></h3>
         <!-- h3 is the carbon footprint value which will be calculated and displayed later -->
+         <h4 id="usage" ></h4>
+         <h4 id="red"></h4>
       </div>
     </form>
     <br /><br />
