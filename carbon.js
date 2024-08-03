@@ -24,7 +24,20 @@ function carbon() {
       Number(metal);
     console.log(carbonFp);
 
-    document.getElementById("cValue").innerText = carbonFp;
+    document.getElementById("cValue").innerText = carbonFp/users + " Pounds";
+    if(carbonFp/users <=6000)
+      {
+        document.getElementById("usage").innerText="You have low carbon footprint(ideal)";
+      }
+      if(carbonFp/users >6000 && carbonFp/users<16000)
+        {
+          document.getElementById("usage").innerText="You have average carbon footprint";
+        }
+        if(carbonFp/users >=16000)
+          {
+            document.getElementById("usage").innerHTML="You have high carbon footprint";
+          }
+      
   }
 }
 
